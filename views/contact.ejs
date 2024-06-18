@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section id="contact-section" class="section">
+      <div class="container">
+        <h1>Connecting people is what matters most!</h1>
+        <h3>Contact Me</h3>
+        <form action="/post" id="contactForm" method="post">
+          <label for="name">Name*:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="age">Email ID*:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email ID"
+            required
+          />
+          <label for="company">Company Name (optional):</label>
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Name of your company"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your message"
+            rows="10"
+            cols="50"
+            required
+          ></textarea>
+          <button id="submit-btn" class="btn" type="submit">Submit</button>
+          <button type="button" id="clear-btn" class="btn" onclick="clearForm()">Clear</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      function clearForm() {
+      
+          if(confirm("Do you want to erase all?")==true){
+            document.getElementById('contactForm').reset();
+          }
+          else{
+            return contactForm;
+          }
+      }
+  </script>
+   
+  </body>
+</html>

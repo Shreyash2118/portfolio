@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+      }
+      .afterSubmit-container {
+        margin: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .afterSubmit-container h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 50px;
+      }
+      .afterSubmit-container h3 {
+        text-align: center;
+        margin: 0 80px;
+        padding: 0 80px;
+        font-size: 25px;
+      }
+      .afterSubmit-container h2 {
+        padding: 20px;
+        font-size: 25px;
+      }
+      #go-back {
+        background-color: white;
+        margin: 7px;
+        padding: 10px 15px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 15px;
+        border: transparent;
+      }
+      #go-back:hover{
+        background-color: lightgreen;
+        border: 1px solid black;
+        color: black;
+        transition-duration: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="afterSubmit-container">
+      <h1>Form Submitted Successfully!</h1>
+
+      <h3>
+        Your message has been received, and I appreciate your interest and will
+        be in touch with you shortly!.
+      </h3>
+
+      <h2>Thank you for your interaction!</h2>
+
+      <button id="go-back" onclick="window.location.href = '/'">Return Home</button>
+
+
+    </div>
+  </body>
+</html>

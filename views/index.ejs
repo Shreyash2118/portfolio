@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+  </head>
+  <body>
+    <%- include('./navbar.ejs') %>
+
+    <main>
+      <!-- HOME-->
+      <%- include('./home.ejs') %>
+
+      <hr />
+
+      <!-- ABOUT -->
+      <%- include('./about.ejs') %>
+
+      <hr />
+
+      <!-- SKILLS -->
+      <%- include('./skills.ejs') %>
+
+      <hr />
+
+      <!-- CONTACT -->
+      <%- include('./contact.ejs') %>
+
+      <hr />
+    </main>
+    <!-- FOOTER -->
+    <%- include('./footer.ejs') %>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Engineer", "Programmer"],
+        typeSpeed: 40,
+        backSpeed: 50,
+        loop: true,
+        startDelay: 2000,
+      });
+
+    </script>
+  </body>
+</html>
